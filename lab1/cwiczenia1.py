@@ -115,8 +115,8 @@ zad. 8
 Dodaj do słownika magazyn owoce z listy owoce, tak, aby owoce były kluczami,
 zaś wartościami były równe 5.
 """
- for item in owoce:
-        magazyn[item] = 5
+for item in owoce:
+         magazyn[item] = 5
 
 print(magazyn)
 
