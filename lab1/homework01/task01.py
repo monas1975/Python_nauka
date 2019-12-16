@@ -5,6 +5,8 @@
 Zad 2. Napisz funkcję even_elements zwracającą listę,
 która zawiera tylko elementy z list o parzystych indeksach.
 """
+
+
 #definicja funkcji
 def even_elements(lista):
     result=[]
