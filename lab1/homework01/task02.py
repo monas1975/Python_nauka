@@ -10,8 +10,20 @@
 
 #Rozwiazanie
 
+#definicja funkcji
 def days_in_year(year):
-    pass
+    if ((year%4==0 and year%100 !=0) or (year%400==0)):
+        amount_of_days = 366
+    else:
+        amount_of_days = 365
+    return amount_of_days
 
+#wywolanie
 input = 2019
-output = 365
+#output = 365
+
+output = days_in_year(input)
+print(output)
+
+for i in range(1999,2020):
+    print("rok: ",i,"ma ",days_in_year(i)," dni")
