@@ -123,9 +123,25 @@ print(magazyn)
 """
 zad. 9
  * Stwórz listę składającą się z parzystych elementów listy l (l. parzystych)
- * Stwórz listę z elementów l o nieparzystych indeksach
+ * Stwórz listę z elementów l o nieparzystych indeksach ; 0 jest parzyste.
 """
 l = [4, 5, 8, 9, 0, 3]
+p1=[] # lista z parzystymi indeksami
+p2=[] # lista z nieparzystymi indeksami
+
+for i in range(len(l)):
+    if i%2 == 0:
+        p1.append(l[i])
+    else:
+        p2.append(l[i])
+
+print("lista wejsciowa: ",l)
+print("lista parzystych indeksow: ",p1)
+print("lista nieparzystych indeksow: ",p2)
+
+
+
+
 
 """
 zad. 10
