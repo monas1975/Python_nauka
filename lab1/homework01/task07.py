@@ -7,8 +7,15 @@ sumę kodów ASCII znaków. Wykorzystaj funkcję ord()
 """
 
 def char_sum(text):
-    pass
+    sum=0
+    temp = list(text)
+
+    for item in temp:
+        sum+=ord(item)
+    return sum
 
 input = "this is a string"
-output = 1516
+#output = 1516
+
+print(char_sum(input))
 
