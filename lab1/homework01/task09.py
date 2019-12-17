@@ -9,8 +9,18 @@ Np. leet('leet') powinno zwrócić '1337'.
 
 
 def leet_speak(text):
-    pass
+    tempList =[]
+    toReplaceVocab = [['e','3'],['l','1'],['O','0'],['t','7']]
+
+    for item in toReplaceVocab:
+        print(item)
+        tempList = item
+        text=text.replace(tempList[0],tempList[1])
+
+    return text
 
 input = 'leet'
+input2 = 'teel'
+print("to jest:  ",leet_speak(input2))
 output = '1337'
 
