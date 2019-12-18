@@ -10,17 +10,19 @@ Np. leet('leet') powinno zwrócić '1337'.
 
 def leet_speak(text):
     tempList =[]
-    toReplaceVocab = [['e','3'],['l','1'],['O','0'],['t','7']]
+    toReplaceVocab = [['e','3'],['l','1'],['O','0'],['t','7']] #tworze slownik
 
-    for item in toReplaceVocab:
-        print(item)
-        tempList = item
-        text=text.replace(tempList[0],tempList[1])
+    for item in toReplaceVocab:    # w petli przechodze przez slownik
+        #print(item)
+        tempList = item            #zmiennna item przypisuje do zmiennej tymczasowej
+        text=text.replace(tempList[0],tempList[1])  #wyszukuje znak i zamieniam
 
     return text
 
+#wywolanie funkcji:
 input = 'leet'
-input2 = 'teel'
+input2 = 'teelleet'
 print("to jest:  ",leet_speak(input2))
-output = '1337'
+print("to jest:  ",leet_speak(input))
+#output = '1337'
 

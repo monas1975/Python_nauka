@@ -8,10 +8,10 @@ sumę kodów ASCII znaków. Wykorzystaj funkcję ord()
 
 def char_sum(text):
     sum=0
-    temp = list(text)
+    temp = list(text)  # dziele na znaki i zapisuje do listy
 
     for item in temp:
-        sum+=ord(item)
+        sum+=ord(item)  #w petli konwertuje znaki do kodow ASCII i sumuje
     return sum
 
 input = "this is a string"

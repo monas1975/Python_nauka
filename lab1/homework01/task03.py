@@ -26,5 +26,5 @@ input = "this is a string , which i will use for string testing"
 vocab = [',', 'this', 'is', 'a', 'which', 'for', 'will', 'i']
 #output = ['string', 'testing', 'use']
 
-output = oov(input,vocab)
-print(output)
+output = oov(input,vocab)   #wywolanie funkcji i przypisanie do zmiennej
+print(output)               #wynik wypisuje na konsoli

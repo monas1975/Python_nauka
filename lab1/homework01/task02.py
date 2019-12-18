@@ -12,7 +12,7 @@
 
 #definicja funkcji
 def days_in_year(year):
-    if ((year%4==0 and year%100 !=0) or (year%400==0)):
+    if ((year%4==0 and year%100 !=0) or (year%400==0)):  #sprawdzanie przystepnosci roku
         amount_of_days = 366
     else:
         amount_of_days = 365
@@ -22,8 +22,8 @@ def days_in_year(year):
 input = 2019
 #output = 365
 
-output = days_in_year(input)
-print(output)
+output = days_in_year(input) #wywloani funkcji i przypisanie do zmiennej
+print(output)                #wypisanie na konsoli
 
-for i in range(1999,2020):
+for i in range(1999,2020):   #sprawdzam w petli 20 lat
     print("rok: ",i,"ma ",days_in_year(i)," dni")

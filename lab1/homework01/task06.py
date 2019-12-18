@@ -11,11 +11,11 @@ ma być zwracany napis "It's not a Big 'No!'".
 
 def big_no(n):
     temp=""
-    if (n<5):
+    if (n<5):       #sprawdzam czy mniejsze od 5
         text = "It's not a Big 'No!'"
     else:
-        for i in range(n):
-            temp+="O"
+        for i in range(n):  # w przeciwnym razie przechodze do petli
+            temp+="O"         #"sklejam "O"
             text="N"+temp+"!"
     return text
 
