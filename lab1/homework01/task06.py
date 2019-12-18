@@ -10,7 +10,19 @@ ma być zwracany napis "It's not a Big 'No!'".
 """
 
 def big_no(n):
-    pass
+    temp=""
+    if (n<5):
+        text = "It's not a Big 'No!'"
+    else:
+        for i in range(n):
+            temp+="O"
+            text="N"+temp+"!"
+    return text
+
 
 input = 2
-output = "It's not a Big 'No!'"
+#output = "It's not a Big 'No!'"
+
+print(big_no(2))
+print(big_no(5))
+print(big_no(50))
